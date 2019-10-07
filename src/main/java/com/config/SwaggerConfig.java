@@ -18,7 +18,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class SwaggerConfig {
 	
 	@Bean
-	public Docket postsApi() {
+	public Docket postsApi1() {
 		return new Docket(DocumentationType.SWAGGER_2).groupName("avk-api")
 						.apiInfo(getApiInfo()).select().paths(postPaths()).build();
 	}
